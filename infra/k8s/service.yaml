@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2-srv
+spec:
+  selector:
+    app: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9004
+  type: ClusterIP

@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2-depl
+  labels:
+    app: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+  template:
+    metadata:
+      labels:
+        app: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+    spec:
+      containers:
+        - name: shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:shivam-testing-collection-coll-79513a254e174377a9c02f915e6861f2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9004
